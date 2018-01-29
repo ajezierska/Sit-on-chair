@@ -67,16 +67,18 @@ header::after {
   display: block;
   clear: both;
 }
-.opened-nav-firm {
+header .row-first nav ul.opened-nav-firm {
   position: absolute;
   color: white;
   background-color: black;
   padding: 15px;
   top: 65px;
   right: 375px;
-  border-radius: 2px;
+  border-radius: 5px;
 }
-.opened-nav-firm li {
+header .row-first nav ul.opened-nav-firm li {
+  font-weight: 400;
+  display: block;
   list-style-type: none;
   font-size: 18px;
   line-height: 20px;
@@ -109,14 +111,26 @@ header::after {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#bfbfbf', GradientType=0);
 }
 
-.header-content-left {
-  background-image: url(../images/black_chair.png);
+.header-content-left li{
+  list-style-type: none;
   width: 500px;
   height: 500px;
   background-size: cover;
   background-position: center;
   margin-top: 80px;
   float: left;
+  display: none;
+}
+.header-content-left li.visible{
+  display: inline-block;
+}
+.header-content-left li.black-chair {
+  background-image: url(../images/black_chair.png);
+}
+.header-content-left li.red-chair {
+  background-image: url(../images/red_chair.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .header-content-right {
@@ -163,6 +177,7 @@ header::after {
   font-size: 100px;
   margin-top: 240px;
   color: #30C4AE;
+  cursor: pointer;
 }
 
 .arrow-left {
