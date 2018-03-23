@@ -1,6 +1,6 @@
 # Sit-on-chair
 
-Simple project have created during workshop in Coderslab.
+Simple project I have created during workshop in Coderslab.
 
 ---
 
